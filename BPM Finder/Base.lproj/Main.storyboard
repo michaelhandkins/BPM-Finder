@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BPM_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6i-Zb-a7I">
+                                <rect key="frame" x="72" y="313" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="Xr8-gM-cqp"/>
+                                    <constraint firstAttribute="width" constant="270" id="iPf-H8-Ba9"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="purple2"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5I-Be-EME"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP TO BEGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzD-QO-D6x">
+                                <rect key="frame" x="80.5" y="210" width="253" height="52"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzc-qL-DLS">
+                                <rect key="frame" x="176" y="634" width="62" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kne-dR-nkQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A6i-Zb-a7I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ghi-AQ-LZ0"/>
+                            <constraint firstItem="fzc-qL-DLS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ILE-6D-AJh"/>
+                            <constraint firstItem="A6i-Zb-a7I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qzr-c6-MoT"/>
+                            <constraint firstItem="bzD-QO-D6x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJK-8s-gfW"/>
+                            <constraint firstItem="A6i-Zb-a7I" firstAttribute="top" secondItem="bzD-QO-D6x" secondAttribute="bottom" constant="51" id="gxL-t6-JGg"/>
+                            <constraint firstItem="fzc-qL-DLS" firstAttribute="top" secondItem="A6i-Zb-a7I" secondAttribute="bottom" constant="51" id="sMl-Ui-KhN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BPMLabel" destination="bzD-QO-D6x" id="Oqa-bv-pNV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="purple2" width="600" height="600"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
